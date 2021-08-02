@@ -1,0 +1,131 @@
+body{
+    margin:0px;
+    font-family: Verdana;
+}
+p{
+    margin:0px;
+}
+a{
+    font-weight: bold;
+    color:#013243
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("/Assets/Background.png");
+    justify-content: center;
+}
+.conteiner_login, .conteiner_title{
+    height: 50vh;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 5vmin;
+    box-sizing: border-box;
+    font-size: 3vmin;
+}
+.conteiner_title{
+    color: #ffffff;
+    display: flex;
+    background-color: #013243;
+}
+#image_left_top{
+    height: 50vh;
+    position:absolute;
+    bottom: 50%;
+}
+.conteiner_login{
+    background-color: #ffffff;
+}
+ #title_conteiner_login,#title_conteiner_title{
+     font-weight: bolder;
+     font-size: 5.3vmin;
+ }
+ #title_conteiner_login{
+    margin-bottom: 15px;
+ }
+ #title_conteiner_title{
+    margin-bottom: 12px;
+ }
+ #subtitle_conteiner_title{
+    color:#86BFD3;
+}
+.text_login{
+    font-weight: bolder;
+    margin-top: 3%;
+    margin-bottom: 2%;
+
+}
+.content_login_data{
+    width:73vmin;
+    border: 1px solid #BCBCBC;
+    border-radius: 3px;
+    padding: 3vmin;
+}
+#acept_box_account{
+    padding: 15px;
+    font-size:3.5vmin ;
+}
+#button_create_account{
+    font-weight: bold;
+    color:white;
+    width:100%;
+    background-color: #013243;
+    border-radius: 3px;
+    padding: 3vmin;
+    position: relative;
+}
+
+
+@media (min-width: 760px){
+    .background{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteiner_login, .conteiner_title{
+        min-height: 60vmin;
+        height: 60vmin;
+        width: 50vmin;
+        font-size: 2vmin;
+    }
+    .conteiner_login{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #email_insertion_box, #password_insertion_box{
+        width:85%;
+    }
+    .text_login, .content_login_data{
+        font-size:2vmin ; 
+    }
+    #acept_box_account,#button_create_account {
+       font-size:2vmin ;
+    }
+    #title_conteiner_login,#title_conteiner_title{
+        font-size: 3.3vmin;
+    }
+}
+@media (min-width: 1024px){
+    .background{
+        flex-direction: row;
+    }
+    .conteiner_login{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .conteiner_title{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #image_left_top{
+        height: 65vh;
+        position:absolute;
+        bottom: 20%;
+    }
+    
+}
